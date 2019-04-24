@@ -1,17 +1,26 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Navbar from './components/navbar'
+import aboutMePage from './containers/aboutMePage'
+import conactMePage from './containers/contactMePage'
+import portfolioPage from './containers/portfolioPage'
+import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          Welcome to Matthew's portfolio, it's coming soon!!!
-        </header>
+        <Navbar />
+        <Switch>
+          <Route exact path="/AboutMe" component={aboutMePage} />
+          <Route exact path="/ContactMe" component={conactMePage} />
+          <Route exact path="/Portfolio" component={portfolioPage} />
+
+          <Route exact path="*" render={() =>  <Redirect to="/AboutMe" />} />
+        </Switch>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter(App)
