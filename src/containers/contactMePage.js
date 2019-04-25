@@ -1,9 +1,9 @@
 import React from 'react'
 
-const contactMePage = (props) => (
+const ContactMePage = (props) => (
   <div>
       contact me
   </div>
 )
 
-export default contactMePage
+export default ContactMePage

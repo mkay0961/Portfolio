@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Navbar from './components/navbar'
-import aboutMePage from './containers/aboutMePage'
-import conactMePage from './containers/contactMePage'
-import portfolioPage from './containers/portfolioPage'
+import Navbar from './components/Navbar'
+import AboutMePage from './containers/AboutMePage'
+import ConactMePage from './containers/ContactMePage'
+import PortfolioPage from './containers/PortfolioPage'
 import { Route, Switch, withRouter, Redirect } from 'react-router-dom'
 import './App.css';
 
@@ -12,10 +12,9 @@ class App extends Component {
       <div className="App">
         <Navbar />
         <Switch>
-          <Route exact path="/AboutMe" component={aboutMePage} />
-          <Route exact path="/ContactMe" component={conactMePage} />
-          <Route exact path="/Portfolio" component={portfolioPage} />
-
+          <Route exact path="/AboutMe" component={AboutMePage} />
+          <Route exact path="/ContactMe" component={ConactMePage} />
+          <Route exact path="/Portfolio" component={PortfolioPage} />
           <Route exact path="*" render={() =>  <Redirect to="/AboutMe" />} />
         </Switch>
       </div>
