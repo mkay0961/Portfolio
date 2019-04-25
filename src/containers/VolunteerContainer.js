@@ -7,15 +7,13 @@ import Flatiron from '../components/Flatiron'
 //   {name: "College of Charleston" , graduated: "December 2018", description: ""}
 // ]
 
-const InfoAboutMe = (props) => (
-  <div id="container">
-    <Segment><Header as="h1">Education</Header></Segment>
+const VolunteerContainer = (props) => (
+  <div id="container" >
+    <Segment><Header as="h1">Volunteer History</Header></Segment>
     <Item.Group>
-      <Flatiron />
-      <br/>
-      <CollegeOfCharleston />
+      stuff
     </Item.Group>
   </div>
 )
 
-export default InfoAboutMe
+export default VolunteerContainer

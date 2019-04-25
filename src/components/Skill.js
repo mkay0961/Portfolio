@@ -37,7 +37,7 @@ class Skill extends Component {
     return (
       <div id="skill">
         <Visibility  offset={[10, 10]} updateOn='repaint' onUpdate={this.handleUpdate}>
-          <Transition visible={transition} animation='bounce' duration={800}>
+          <Transition visible={transition} animation='tada' duration={700}>
             <div>
               {this.props.name}
             </div>

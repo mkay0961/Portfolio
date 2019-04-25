@@ -43,12 +43,12 @@ class CollegeOfCharleston extends Component {
               <Item>
                 <Item.Content>
                   <Item.Header>
-                    College of Charleston
+                    <Label>College of Charleston</Label>
                   </Item.Header>
                   <Divider/>
                   <Container textAlign='left'>
                     <Item.Meta>
-                      <Label as='a' size="tiny" color='teal' ribbon>Graduated: December 2018</Label>
+                      <Label size="tiny" color='teal' ribbon>Graduated: December 2018</Label>
                     </Item.Meta>
                     <br/>
                     <Item.Description>

@@ -7,7 +7,7 @@ import Skill from '../components/Skill'
 const skills =  () => ["Pythin", "Java","Ruby", "Ruby on Rails", "JavaScript", "React" , "ADD MORE"]
 
 const SkillsContainer = (props) => (
-  <div id="skillsContainer">
+  <div id="container">
 
     <Segment>
       <Header as="h1">

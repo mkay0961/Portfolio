@@ -43,12 +43,13 @@ class Flatiron extends Component {
               <Item>
                 <Item.Content>
                   <Item.Header>
-                    The Flatiron School D.C.
+                    <Label>The Flatiron School D.C.</Label>
+
                   </Item.Header>
                   <Divider/>
                   <Container textAlign='left'>
                     <Item.Meta>
-                      <Label as='a' size="tiny" color='teal' ribbon>Graduated: April 2019</Label>
+                      <Label size="tiny" color='teal' ribbon>Graduated: April 2019</Label>
                     </Item.Meta>
                     <br/>
                     <Item.Description>

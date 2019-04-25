@@ -7,11 +7,16 @@ const ProfilePicBox = (props) => (
     <div id="proPic">
       <Header textAlign='center'>
         <Header.Content>
-          <Image centered src={require("../pictures/proPic.png")}/>
-          <h1>Matthew Kay</h1>
+          <Image centered circular src={require("../pictures/proPic.png")}/>
+          <br/>
           <p>
             Stuff about how awesome i am goes here
-          </p>
+            Stuff about how awesome i am goes here
+            Stuff about how awesome i am goes here
+            Stuff about how awesome i am goes here
+            Stuff about how awesome i am goes here
+            Stuff about how awesome i am goes here
+        </p>
         </Header.Content>
       </Header>
     </div>
