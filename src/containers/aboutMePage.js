@@ -17,7 +17,7 @@ const AboutMePage = (props) => (
           <ProfilePicBox />
         </Grid.Column>
         <Grid.Column>
-          <Image src='https://react.semantic-ui.com/images/wireframe/paragraph.png' />
+          <InfoAboutMe />
         </Grid.Column>
       </Grid>
     </Responsive>

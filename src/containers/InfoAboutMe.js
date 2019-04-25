@@ -11,8 +11,9 @@ const InfoAboutMe = (props) => (
   <div id="infoAboutMe">
     <Segment><Header as="h1">Education</Header></Segment>
     <Item.Group>
-      <CollegeOfCharleston />
       <Flatiron />
+      <br/>
+      <CollegeOfCharleston />
 
     </Item.Group>
   </div>
