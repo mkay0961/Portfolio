@@ -14,7 +14,6 @@ const InfoAboutMe = (props) => (
       <Flatiron />
       <br/>
       <CollegeOfCharleston />
-
     </Item.Group>
   </div>
 )

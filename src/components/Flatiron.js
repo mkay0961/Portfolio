@@ -24,18 +24,21 @@ class Flatiron extends Component {
     }
   }
 
-  contextRef = createRef()
+  // contextRef = createRef()
 
-  handleUpdate = (e, { calculations }) => this.setState({ calculations })
-
+  handleUpdate = (e, { calculations }) => {
+    if(calculations.onScreen && !this.state.transition){
+      this.setState({ transition: true, calculations })
+    }
+  }
 
   render() {
-    const { transition, calculations } = this.state
+    const { transition } = this.state
 
     return (
 
         <Visibility  offset={[10, 10]} updateOn='repaint' onUpdate={this.handleUpdate}>
-          <Transition visible={calculations.onScreen || calculations.topVisible} animation='zoom' duration={500}>
+          <Transition visible={transition} animation='zoom' duration={500}>
             <Segment>
               <Item>
                 <Item.Content>
