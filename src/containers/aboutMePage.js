@@ -17,7 +17,7 @@ const test = () => {
 
 
 const AboutMePage = (props) => (
-  <div id="aboutme">
+  <div id="backImage">
 
     <Responsive minWidth={Responsive.onlyMobile.minWidth} maxWidth={Responsive.onlyTablet.minWidth} >
 
@@ -72,7 +72,7 @@ const AboutMePage = (props) => (
 
     <Responsive  minWidth={Responsive.onlyLargeScreen.minWidth} >
       <Label size="massive"><Header as="h1">Matthew Kay</Header></Label>
-      
+
       <Grid columns={2} padded>
         <Grid.Row>
 

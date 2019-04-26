@@ -1,7 +1,7 @@
 import React from 'react'
 
 const PortfolioPage = (props) => (
-  <div>
+  <div id="backImage">
       portfolio
   </div>
 )

@@ -47,14 +47,8 @@
   margin-top: 10%;
   margin-bottom: 10%;
 } */
-#aboutme{
-  background: url("https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   height: 100%;
-}
+
+
 
 @media only screen and (max-width: 767px) {
   #proPic {
@@ -77,7 +71,6 @@
     background-color: rgba(255, 255, 255, 0.7);
 
     padding: 10px;
-
     margin-left: 1%;
     margin-right: 1%;
     margin-top: 10%;
@@ -93,6 +86,16 @@
     margin: 2.5%;
   }
 
+  #backImage{
+    background: url("https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     position: relative;
+	   top: -50%;
+     height: 100%;
+  }
 
 
 
@@ -137,6 +140,14 @@
   #widen.column {
     width: 100%;
   }
+  #backImage{
+    background: url("https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     height: 100vh;
+  }
 
 }
 
@@ -177,7 +188,18 @@
     margin: 2.5%;
   }
 
+  #backImage{
+    height: 100vh !important;
+  }
 
+  #backImage{
+    background: url("https://images.pexels.com/photos/953214/pexels-photo-953214.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center center fixed;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     height: 100vh;
+  }
 
 
 }
