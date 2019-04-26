@@ -4,12 +4,12 @@ import InfoAboutMe from './InfoAboutMe'
 import SkillsContainer from './SkillsContainer'
 import JobsContainer from './JobsContainer'
 import VolunteerContainer from './VolunteerContainer'
-import { Grid, Image, Label, Responsive, Divider, Header } from 'semantic-ui-react'
+import { Grid, Image, Segment, Label, Responsive, Divider, Header } from 'semantic-ui-react'
 
 const AboutMePage = (props) => (
   <div id="aboutme">
 
-    <Responsive maxWidth={500}>
+    <Responsive  maxWidth={600} >
       <Label size="massive" color="white"><Header as="h1">Matthew Kay</Header></Label>
       <ProfilePicBox />
       <Divider inverted />
@@ -22,29 +22,51 @@ const AboutMePage = (props) => (
       <VolunteerContainer />
     </Responsive>
 
-    <Responsive minWidth={501}>
+    <Responsive  minWidth={601} >
       <Label size="massive"><Header as="h1">Matthew Kay</Header></Label>
 
       <Grid columns={2} padded>
-        <Grid.Column>
+        <Grid.Row>
 
+        <Grid.Column>
           <ProfilePicBox />
-
         </Grid.Column>
+
         <Grid.Column>
+
           <Grid.Row>
             <InfoAboutMe />
           </Grid.Row>
+
           <Grid.Row>
             <SkillsContainer />
           </Grid.Row>
+
         </Grid.Column>
+      </Grid.Row>
+
+        <Grid.Row>
+          <Grid.Column>
+            <JobsContainer />
+          </Grid.Column>
+          <Grid.Column>
+            <VolunteerContainer />
+          </Grid.Column>
+        </Grid.Row>
+
+
       </Grid>
-      <JobsContainer />
-      <VolunteerContainer />
+
+
     </Responsive>
+
 
   </div>
 )
 
 export default AboutMePage
+
+
+    // <Responsive minWidth={1080}>
+    //   <Segment>d</Segment>
+    // </Responsive>
