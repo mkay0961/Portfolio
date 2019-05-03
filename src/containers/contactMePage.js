@@ -13,7 +13,7 @@ const ContactMePage = (props) => (
 
       <Responsive  minWidth={Responsive.onlyTablet.minWidth+1} maxWidth={Responsive.onlyLargeScreen.minWidth}>
         <Label size="massive" color="white"><Header as="h1">Matthew Kay</Header></Label>
-        <Grid columns={2} padded='horizontally'>
+        <Grid columns={2} padded='horizontally' className="socialGrid">
           <Grid.Row>
             <Grid.Column>
               <Email/>
@@ -27,7 +27,7 @@ const ContactMePage = (props) => (
 
       <Responsive  minWidth={Responsive.onlyLargeScreen.minWidth} >
         <Label size="massive" color="white"><Header as="h1">Matthew Kay</Header></Label>
-        <Grid columns={2} padded='horizontally'>
+        <Grid columns={2} padded='horizontally' className="socialGrid">
           <Grid.Row>
             <Grid.Column>
               <Email/>
