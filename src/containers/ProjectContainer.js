@@ -1,6 +1,7 @@
 import React from 'react'
-import { Card, Item, Segment, Header, Container, Divider } from 'semantic-ui-react'
-import Project from '../components/Project'
+import { Card, Item, Responsive, Popup, Segment, Header } from 'semantic-ui-react'
+import ProjectMouse from '../components/ProjectMouse'
+import ProjectMobile from '../components/ProjectMobile'
 
 const Projects = [
   {name: "Food Tracker"},
@@ -13,9 +14,16 @@ const Projects = [
 const ProjectContainer = (props) => (
   <div id="container">
     <Segment><Header as="h1">Projects</Header></Segment>
-    <Card.Group>
-    {Projects.map((pro, i)=> <Project key={i} name={pro["name"]} />)}
-    </Card.Group>
+    <Responsive minWidth={Responsive.onlyMobile.minWidth} maxWidth={Responsive.onlyTablet.minWidth} >
+      <Card.Group>
+        {Projects.map((pro, i)=> <ProjectMobile key={i} name={pro["name"]} />)}
+      </Card.Group>
+    </Responsive>
+    <Responsive  minWidth={Responsive.onlyTablet.minWidth+1} >
+      <Card.Group>
+        {Projects.map((pro, i)=> <ProjectMouse key={i} name={pro["name"]} />)}
+      </Card.Group>
+    </Responsive>
   </div>
 )
 

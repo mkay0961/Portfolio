@@ -101,6 +101,10 @@
   .ui.card {
     height: 225px;
   }
+  .ui.cards {
+    display: inline-block !important;
+  }
+
 
 
 }
@@ -157,9 +161,14 @@
     height: -webkit-fill-available;
   }
 
-  .ui.card {
-    height: 225px;
+  a.ui.card {
+    height: 700px !important;
+    width: 700px !important;
   }
+  .ui.cards {
+    display: inline-flex !important;
+  }
+
 
 }
 
@@ -213,9 +222,12 @@
     .ui.horizontally.padded.two.column.grid.socialGrid {
       height: -webkit-fill-available;
     }
-    .ui.card {
-      height: 225px;
+    a.ui.card {
+      height: 700px !important;
+      width: 700px !important;
     }
-
+    .ui.cards {
+      display: inline-flex !important;
+    }
 
 }
