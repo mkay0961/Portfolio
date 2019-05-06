@@ -37,6 +37,7 @@
     margin-bottom: 0;
 }
 
+
 /* #proPic {
   border-radius: 25px;
   border: 2px solid black;
@@ -97,7 +98,9 @@
      height: 100%;
   }
 
-  
+  .ui.card {
+    height: 225px;
+  }
 
 
 }
@@ -154,6 +157,10 @@
     height: -webkit-fill-available;
   }
 
+  .ui.card {
+    height: 225px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -205,6 +212,9 @@
     }
     .ui.horizontally.padded.two.column.grid.socialGrid {
       height: -webkit-fill-available;
+    }
+    .ui.card {
+      height: 225px;
     }
 
 

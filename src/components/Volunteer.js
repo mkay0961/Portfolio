@@ -1,7 +1,7 @@
 import React, { Component, createRef } from 'react'
 import { Label, Item, Segment, Header, Container, Divider, Transition, Ref, Visibility } from 'semantic-ui-react'
 
-class Flatiron extends Component {
+class Volunteer extends Component {
   constructor(){
     super()
     this.state = {
@@ -43,17 +43,16 @@ class Flatiron extends Component {
               <Item>
                 <Item.Content>
                   <Item.Header>
-                    <Label>The Flatiron School D.C.</Label>
-
+                    <Label>{this.props.name}</Label>
                   </Item.Header>
                   <Divider/>
                   <Container textAlign='left'>
                     <Item.Meta>
-                      <Label size="tiny" color='teal' ribbon>Graduated: April 2019</Label>
+                      <Label size="tiny" color='teal' ribbon>{this.props.date}</Label>
                     </Item.Meta>
                     <br/>
                     <Item.Description>
-                      Imersive Full Stack Web Development Program
+                      {this.props.description}
                     </Item.Description>
                   </Container>
                 </Item.Content>
@@ -66,4 +65,4 @@ class Flatiron extends Component {
   }
 }
 
-export default Flatiron
+export default Volunteer

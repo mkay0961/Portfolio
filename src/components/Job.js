@@ -1,7 +1,7 @@
 import React, { Component, createRef } from 'react'
 import { Label, Item, Segment, Header, Container, Divider, Transition, Ref, Visibility } from 'semantic-ui-react'
 
-class CollegeOfCharleston extends Component {
+class Job extends Component {
   constructor(){
     super()
     this.state = {
@@ -32,29 +32,35 @@ class CollegeOfCharleston extends Component {
     }
   }
 
-
   render() {
     const { transition } = this.state
 
     return (
-        <Visibility offset={[10, 10]} updateOn='repaint' onUpdate={this.handleUpdate}>
+
+        <Visibility  offset={[10, 10]} updateOn='repaint' onUpdate={this.handleUpdate}>
           <Transition visible={transition} animation='zoom' duration={500}>
             <Segment>
               <Item>
                 <Item.Content>
                   <Item.Header>
-                    <Label>College of Charleston</Label>
+                    <Label size="big">{this.props.name}</Label>
                   </Item.Header>
                   <Divider/>
                   <Container textAlign='left'>
                     <Item.Meta>
-                      <Label size="tiny" color='teal' ribbon>Graduated: December 2018</Label>
+                      <h4>{this.props.position}</h4>
+                      <Divider/>
+                    </Item.Meta>
+                    <Item.Meta>
+                      <Label size="tiny" color='teal' ribbon>{this.props.date}</Label>
                     </Item.Meta>
                     <br/>
                     <Item.Description>
-                      Major: Bachlor of Science in Computer Science
-                      <br/><br/>
-                      Minor: Data Science
+                      {this.props.description.map((desc)=>{
+                        return<p>
+                          {desc}
+                        </p>
+                      })}
                     </Item.Description>
                   </Container>
                 </Item.Content>
@@ -62,8 +68,9 @@ class CollegeOfCharleston extends Component {
             </Segment>
           </Transition>
         </Visibility>
+
     )
   }
 }
 
-export default CollegeOfCharleston
+export default Job

@@ -10,12 +10,17 @@ const ProfilePicBox = (props) => (
           <Image centered circular src={require("../pictures/proPic.png")}/>
           <br/>
           <p>
-            Stuff about how awesome i am goes here
-            Stuff about how awesome i am goes here
-            Stuff about how awesome i am goes here
-            Stuff about how awesome i am goes here
-            Stuff about how awesome i am goes here
-            Stuff about how awesome i am goes here
+            Problem solving has always been a strength and one of the reasons
+            I became passionate about technology and Software Development. I
+            received a Computer Science and Data Science degree from the College
+            of Charleston where I strengthened my software development skills.
+            Immediately following graduation I continued building my software
+            development skills by enrolling in the Flatiron School where I
+            completed a full stack immersive web development program.
+            These institutions provided a strong foundation in software
+            development and database management including proficiency in
+            such as Python, Java, JavaScript, Ruby, HTML, CSS, Ruby on Rails,
+            React, Redux and SQL.
         </p>
         </Header.Content>
       </Header>

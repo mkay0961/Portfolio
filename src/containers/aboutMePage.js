@@ -1,6 +1,6 @@
 import React from 'react'
 import ProfilePicBox from '../components/ProfilePicBox'
-import InfoAboutMe from './InfoAboutMe'
+import EducationContainer from './EducationContainer'
 import SkillsContainer from './SkillsContainer'
 import JobsContainer from './JobsContainer'
 import VolunteerContainer from './VolunteerContainer'
@@ -25,7 +25,7 @@ const AboutMePage = (props) => (
 
       <ProfilePicBox />
       <Divider inverted />
-      <InfoAboutMe />
+      <EducationContainer />
       <Divider inverted />
       <SkillsContainer />
       <Divider inverted />
@@ -46,7 +46,7 @@ const AboutMePage = (props) => (
 
           <Grid.Column>
             <Grid.Row>
-              <InfoAboutMe />
+              <EducationContainer />
             </Grid.Row>
             <Grid.Row>
               <SkillsContainer />
@@ -83,7 +83,7 @@ const AboutMePage = (props) => (
         <Grid.Column>
 
           <Grid.Row>
-            <InfoAboutMe />
+            <EducationContainer />
           </Grid.Row>
 
           <Grid.Row>

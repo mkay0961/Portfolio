@@ -1,10 +1,8 @@
 import React from 'react'
 import { Label, Card, Segment, Header, Container, Divider } from 'semantic-ui-react'
-import CollegeOfCharleston from '../components/CollegeOfCharleston'
-import Flatiron from '../components/Flatiron'
 import Skill from '../components/Skill'
 
-const skills =  () => ["Pythin", "Java","Ruby", "Ruby on Rails", "JavaScript", "React" , "ADD MORE"]
+const skills = ["Python", "Java", "JavaScript", "React", "Ruby", "Ruby on Rails", "Redux", "SQL", "HTML", "CSS"]
 
 const SkillsContainer = (props) => (
   <div id="container">
@@ -16,7 +14,7 @@ const SkillsContainer = (props) => (
     </Segment>
 
     <div className="ui cards">
-      {skills().map((skill, i)=><Skill name={skill} key={i}/>)}
+      {skills.map((skill, i)=><Skill name={skill} key={i}/>)}
     </div>
 
   </div>
