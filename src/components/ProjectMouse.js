@@ -49,6 +49,7 @@ class ProjectMouse extends Component {
     const { transition } = this.state
 
     return (
+      <Popup content={`Click me to find out more about ${this.props.name}!`} trigger={
       <div id="project">
         <Visibility  offset={[10, 10]} updateOn='repaint' onUpdate={this.handleUpdate}>
           <Transition visible={transition} animation='zoom' duration={500}>
@@ -94,6 +95,7 @@ class ProjectMouse extends Component {
         </Modal.Actions>
       </Modal>
     </div>
+  } />
     )
   }
 }

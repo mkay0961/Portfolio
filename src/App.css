@@ -100,6 +100,7 @@
   .contactPage{
     height: 100vh !important;
   }
+
   .block{
     display: inline-block !important;
   }
@@ -182,7 +183,20 @@
   .ui.cards {
     display: inline-flex !important;
   }
-
+  div#project {
+    margin: 1%;
+  }
+  div#container.contactStuff{
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-bottom: 0%;
+  }
+  div#backImage.contactPage{
+    height: 100vh !important;
+  }
+  .ui.segment.zoom.visible.transition {
+    margin: 2%;
+  }
 
 }
 
@@ -243,5 +257,18 @@
     .ui.cards {
       display: inline-flex !important;
     }
-
+    div#project {
+      margin: 1%;
+    }
+    div#container.contactStuff{
+      margin-right: 25%;
+      margin-left: 25%;
+      margin-bottom: 0%;
+    }
+    div#backImage.contactPage{
+      height: 100vh !important;
+    }
+    .ui.segment.zoom.visible.transition {
+      margin: 2%;
+    }
 }

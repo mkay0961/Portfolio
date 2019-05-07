@@ -33,7 +33,7 @@ class Email extends Component {
   render() {
 
     return (
-      <div id="container">
+      <div id="container" className="contactStuff">
         <Label siz="massive"><Icon name='mail' size='large' />Mkay0961@gmail.com</Label>
         <Form onChange={this.handleChange}>
             <Form.Field name="name" control={Input} label='Name' placeholder='Name' />
