@@ -4,7 +4,7 @@ import SocialBtns from '../components/SocialBtns'
 import { Label, Responsive, Grid, Segment, Header, Container, Divider, Transition, Ref, Visibility } from 'semantic-ui-react'
 
 const ContactMePage = (props) => (
-  <div id="backImage">
+  <div id="backImage" className="contactPage">
       <Responsive minWidth={Responsive.onlyMobile.minWidth} maxWidth={Responsive.onlyTablet.minWidth} >
         <Label size="massive" color="white"><Header as="h1">Matthew Kay</Header></Label>
         <Email/>
