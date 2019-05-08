@@ -264,7 +264,7 @@
     }
     .ui.cards {
       display: inline-flex !important;
-      padding-left: 5%;
+      padding-left: 20%;
     }
     div#project {
       margin: 1%;
