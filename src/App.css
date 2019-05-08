@@ -205,6 +205,9 @@
   div#links {
     margin: 10px;
   }
+  .ui.massize.label {
+    font-size: 1.5em;
+  }
 
 }
 
@@ -288,4 +291,8 @@
     div#links {
       margin: 10px;
     }
+    .ui.massize.label {
+      font-size: 1.5em;
+    }
+
 }
