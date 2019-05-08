@@ -71,7 +71,7 @@ class ProjectMouse extends Component {
         <Modal.Content image >
           <Modal.Description >
           {this.props.demo?
-          <iframe width="70%" height="800" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="70%" height="500" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           :null
           }
           <Divider/>
