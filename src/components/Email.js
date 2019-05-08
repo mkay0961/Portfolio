@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Label, Form, Icon, Segment, Header, Input, TextArea, Divider, Ref, Button } from 'semantic-ui-react'
+import { Label, Form, Icon, Input, TextArea, Button } from 'semantic-ui-react'
 
 class Email extends Component {
   constructor(){
@@ -41,7 +41,7 @@ class Email extends Component {
             <Form.Field name="mess" control={TextArea} label='Message' placeholder='Message...' />
             <Form.Field onClick={this.handSubmit} control={Button}>Submit</Form.Field>
         </Form>
-        <a href="mailto:nowhere@mozilla.org" id="email"></a>
+        <a href="mailto:nowhere@mozilla.org" id="email"/>
       </div>
     )
   }

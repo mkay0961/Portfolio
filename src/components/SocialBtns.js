@@ -1,5 +1,5 @@
 import React from 'react'
-import { Label, Popup, Icon, Button, Header, Container, Divider, Transition, Ref, Visibility } from 'semantic-ui-react'
+import { Popup} from 'semantic-ui-react'
 import { SocialIcon } from 'react-social-icons';
 
 const SocialBtns = (props) => (

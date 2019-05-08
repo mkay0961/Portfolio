@@ -1,5 +1,5 @@
-import React, { Component, createRef } from 'react'
-import { Label, Item, Segment, Header, Container, Divider, Transition, Ref, Visibility } from 'semantic-ui-react'
+import React, { Component } from 'react'
+import { Label, Item, Segment, Container, Divider, Transition, Visibility } from 'semantic-ui-react'
 
 class Education extends Component {
   constructor(){
@@ -23,8 +23,6 @@ class Education extends Component {
       }
     }
   }
-
-  // contextRef = createRef()
 
   handleUpdate = (e, { calculations }) => {
     if(calculations.onScreen && !this.state.transition){

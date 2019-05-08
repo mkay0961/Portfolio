@@ -1,7 +1,5 @@
-import React, { Component } from 'react'
-import { Menu, Responsive, Segment, Header, Image, Transition } from 'semantic-ui-react'
-import { Link } from 'react-router-dom'
-
+import React from 'react'
+import { Header, Image } from 'semantic-ui-react'
 
 const ProfilePicBox = (props) => (
     <div id="proPic">

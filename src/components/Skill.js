@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { Label, Card, Item, Segment, Header, Container, Divider, Transition, Ref, Visibility } from 'semantic-ui-react'
+import { Transition, Visibility } from 'semantic-ui-react'
 
 class Skill extends Component {
   constructor(){

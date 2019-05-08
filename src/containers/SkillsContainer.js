@@ -1,5 +1,5 @@
 import React from 'react'
-import { Label, Card, Segment, Header, Container, Divider } from 'semantic-ui-react'
+import { Segment, Header } from 'semantic-ui-react'
 import Skill from '../components/Skill'
 
 const skills = ["Python", "Java", "JavaScript", "React", "Ruby", "Ruby on Rails", "Redux", "SQL", "HTML", "CSS"]

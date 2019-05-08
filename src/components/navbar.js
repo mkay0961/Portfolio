@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Menu, Responsive, Segment } from 'semantic-ui-react'
+import { Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
 
 
@@ -60,12 +60,3 @@ class Navbar extends Component {
 }
 
 export default Navbar
-
-//
-// <Responsive minWidth={501}>
-//   <Menu.Item header>Matthew Kay</Menu.Item>
-// </Responsive>
-//
-// <Responsive maxWidth={500}>
-//     <Menu.Item color="red"header>M.K.</Menu.Item>
-// </Responsive>

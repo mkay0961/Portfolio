@@ -1,10 +1,15 @@
 import React from 'react'
-import { Label, Item, Segment, Header, Container, Divider } from 'semantic-ui-react'
+import { Item, Segment, Header } from 'semantic-ui-react'
 import Volunteer from '../components/Volunteer'
 
 const Volunteers = [
-  {name: "Village at Rockville Retirement Community" , date: "Jan 2013 – May 2014"  , description: "Assisted residents with physical activities"},
-  {name: "Hospice Caring Montgomery County" , date: "Aug 2010 – Oct 2012", description: "Assisted with annual fundraiser events"}
+  {name: "Village at Rockville Retirement Community" , date: "Jan 2013 – May 2014",
+    description: "Assisted residents with physical activities"
+  },
+
+  {name: "Hospice Caring Montgomery County" , date: "Aug 2010 – Oct 2012",
+    description: "Assisted with annual fundraiser events"
+  }
 ]
 const VolunteerContainer = (props) => (
   <div id="container" >

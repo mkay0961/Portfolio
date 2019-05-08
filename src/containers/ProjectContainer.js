@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Item, Responsive, Popup, Segment, Header } from 'semantic-ui-react'
+import { Card, Responsive, Segment, Header } from 'semantic-ui-react'
 import ProjectMouse from '../components/ProjectMouse'
 import ProjectMobile from '../components/ProjectMobile'
 

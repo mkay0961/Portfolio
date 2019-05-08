@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
-import { Reveal, Card, Modal, Segment, Image, Button, Divider, Icon, Header, Popup, Label, Transition, Visibility } from 'semantic-ui-react'
+import { Card, Modal, Image, Button, Divider, Header, Label, Transition, Visibility } from 'semantic-ui-react'
 import { SocialIcon } from 'react-social-icons';
 
 
@@ -69,7 +68,7 @@ class ProjectMobile extends Component {
         <Modal.Header>{this.props.name}</Modal.Header>
         <Modal.Content image>
           {this.props.demo?
-          <iframe width="100%" height="100%" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe title="Demo" width="100%" height="100%" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           :null
           }
           <Modal.Description>

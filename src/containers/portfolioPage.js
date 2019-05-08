@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Image, Segment, Label, Responsive, Divider, Header } from 'semantic-ui-react'
+import { Segment, Label, Responsive, Header } from 'semantic-ui-react'
 import ProjectContainer from './ProjectContainer'
 
 const PortfolioPage = (props) => (

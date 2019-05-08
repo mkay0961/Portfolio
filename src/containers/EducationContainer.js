@@ -1,5 +1,5 @@
 import React from 'react'
-import { Label, Item, Segment, Header, Container, Divider } from 'semantic-ui-react'
+import { Item, Segment, Header } from 'semantic-ui-react'
 import Education from '../components/Education'
 
 const Educations = [

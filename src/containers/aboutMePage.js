@@ -4,16 +4,7 @@ import EducationContainer from './EducationContainer'
 import SkillsContainer from './SkillsContainer'
 import JobsContainer from './JobsContainer'
 import VolunteerContainer from './VolunteerContainer'
-import { Grid, Image, Segment, Label, Responsive, Divider, Header } from 'semantic-ui-react'
-
-// const test = () => {
-//   console.log("mobile", {...Responsive.onlyMobile});
-//   console.log("tab", {...Responsive.onlyTablet});
-//   console.log("comp", {...Responsive.onlyComputer});
-//   console.log("large", {...Responsive.onlyLargeScreen});
-//   console.log("wide", {...Responsive.onlyWidescreen});
-//
-// }
+import { Grid, Label, Responsive, Divider, Header } from 'semantic-ui-react'
 
 
 const AboutMePage = (props) => (
