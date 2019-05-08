@@ -182,6 +182,7 @@
   }
   .ui.cards {
     display: inline-flex !important;
+    padding-left: 10%;
   }
   div#project {
     margin: 1%;
@@ -196,6 +197,13 @@
   }
   .ui.segment.zoom.visible.transition {
     margin: 2%;
+  }
+  .description {
+    padding-left: 3%;
+  }
+
+  div#links {
+    margin: 10px;
   }
 
 }
@@ -256,6 +264,7 @@
     }
     .ui.cards {
       display: inline-flex !important;
+      padding-left: 5%;
     }
     div#project {
       margin: 1%;
@@ -270,5 +279,13 @@
     }
     .ui.segment.zoom.visible.transition {
       margin: 2%;
+    }
+
+    .description {
+      padding-left: 3%;
+    }
+
+    div#links {
+      margin: 10px;
     }
 }

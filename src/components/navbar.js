@@ -13,6 +13,10 @@ class Navbar extends Component {
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
 
+  openResume = () => {
+    window.open('https://drive.google.com/file/d/153Q0ccFD95T1uDcHgKyVb7wp0M6K_Ap2/view','_self')
+  }
+
   render() {
     const { activeItem } = this.state
 
@@ -42,6 +46,12 @@ class Navbar extends Component {
               onClick={this.handleItemClick}
             />
           </Link>
+
+          <Menu.Item
+            name='Resume'
+            active={false}
+            onClick={()=>this.openResume()}
+          />
 
 
         </Menu>

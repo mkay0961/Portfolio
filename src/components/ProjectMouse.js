@@ -69,12 +69,13 @@ class ProjectMouse extends Component {
       <Modal size="fullscreen" open={this.state.show} onClose={()=>this.onClose()} >
         <Modal.Header>{this.props.name}</Modal.Header>
         <Modal.Content image >
-          <Modal.Description >
+
           {this.props.demo?
-          <iframe width="70%" height="500" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="1200" height="600" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           :null
           }
           <Divider/>
+          <Modal.Description >
             {this.props.description? <Header>{this.props.description}</Header>: null}
             <Divider/>
               {this.props.details.map((det)=>{
@@ -84,7 +85,7 @@ class ProjectMouse extends Component {
               })}
               <Divider/>
               {this.props.links.map((link)=>{
-                return <a href={`${Object.values(link)[0]}`}><Label><SocialIcon url={`${Object.values(link)[0]}`} /><br/>{Object.keys(link)[0]}</Label></a>
+                return <a href={`${Object.values(link)[0]}`}><Label id="links"><SocialIcon url={`${Object.values(link)[0]}`} /><br/>{Object.keys(link)[0]}</Label></a>
               })}
           </Modal.Description>
         </Modal.Content>

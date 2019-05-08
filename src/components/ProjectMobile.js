@@ -69,7 +69,7 @@ class ProjectMobile extends Component {
         <Modal.Header>{this.props.name}</Modal.Header>
         <Modal.Content image>
           {this.props.demo?
-          <iframe width="100%" height="200" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe width="100%" height="100%" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           :null
           }
           <Modal.Description>
