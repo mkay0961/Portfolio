@@ -68,13 +68,13 @@ class ProjectMouse extends Component {
       <Modal size="fullscreen" open={this.state.show} onClose={()=>this.onClose()} >
         <Modal.Header>{this.props.name}</Modal.Header>
         <Modal.Content image >
-
+          <Modal.Description >
           {this.props.demo?
           <iframe title="Demo" width="1200" height="600" src={`${this.props.demo}`} frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           :null
           }
           <Divider/>
-          <Modal.Description >
+
             {this.props.description? <Header>{this.props.description}</Header>: null}
             <Divider/>
               {this.props.details.map((det)=>{

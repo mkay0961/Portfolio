@@ -10,7 +10,7 @@ const Projects = [
               "Developed a React front-end so the user can interact with the application and add, eat, and view all their data. ",
               "Implemented Redux for better state management and authentication "],
     links:[{Frontend:"https://github.com/mkay0961/food_tracker_frontend"},{Backend: "https://github.com/mkay0961/food_tracker_backend"}],
-    demo: "https://www.youtube.com/embed/rKszL_VdBCA",
+    demo: "https://www.youtube.com/embed/rKszL_VdBCA?rel=0",
     pic: "https://images.pexels.com/photos/264636/pexels-photo-264636.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
   },
 

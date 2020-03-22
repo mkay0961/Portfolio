@@ -119,7 +119,9 @@
     margin-left: 5%;
     margin-right: 5%;
 }
-
+.ui.segment.zoom.visible.transition {
+  margin-top: 4%;
+}
 
 }
 
@@ -177,8 +179,8 @@
   }
 
   a.ui.card {
-    height: 700px !important;
-    width: 700px !important;
+    height: 400px!important;
+    width: 500px!important;
   }
   .ui.cards {
     display: inline-flex !important;
@@ -262,8 +264,8 @@
       height: -webkit-fill-available;
     }
     a.ui.card {
-      height: 700px !important;
-      width: 700px !important;
+      height: 400px!important;
+      width: 500px!important;
     }
     .ui.cards {
       display: inline-flex !important;
